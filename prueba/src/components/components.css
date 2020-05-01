@@ -1,0 +1,91 @@
+header{
+  height: 13vh;
+  margin-bottom: 20px;
+}
+
+i{
+  margin-left: 10%;
+  font-size: 5vmin;}
+
+h1{
+  margin-left: 10px;
+  font-size: 3vmin;
+}
+
+.b1{
+  width: 270px;
+  height: 40px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: solid rgba(16, 115, 175, 1) 1px;
+  border-radius: 28px;
+}
+.enlace1{
+  margin-left: 55px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer !important;
+}
+
+footer{
+  height: 9vh;
+  background-color: black;
+  font-size: 12px;
+}
+
+.Registro{
+  background-image: url("../images/component.png") ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: -60vh;
+  font-family:"Montserrat";
+  color: white;
+  text-align: center
+}
+
+.section-reg{
+  height: 74.9vh;
+}
+
+.datos{
+  margin-left: 10vw;
+}
+.progress{
+  width: 50vw;
+  height: 10px;
+}
+
+.progress-bar{
+  background-color: #FA4D09;
+}
+
+.titulo{
+  margin-top: 30px;
+}
+.font-s{
+  font-size: 6vmin;
+}
+.circle{
+  font-size: 25px;
+  margin-left: 0;
+  margin-right: 20px;
+  height: 35px;
+  width: 35px;
+  border-radius: 200px 200px 200px 200px;
+  background-color: #FA4D09;
+  color: white;
+}
+
+form{
+  margin-top: 40px;
+}
+
+.reg-figure{
+  margin-right: 0;
+  width: auto;
+}
+
+.reg-astronauta {
+  float: left;
+  height: 75vh;
+  pointer-events: none;
+}

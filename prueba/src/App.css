@@ -1,0 +1,122 @@
+.App {
+  background-color: #072348;
+  font-family:"Montserrat";
+  color: white;
+  text-align: center
+}
+
+.Home{
+  background-image: url("images/component.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App-section{
+  height: 87vh;
+  align-items: center;
+}
+
+figure{
+  align-items: center;
+  margin: 0;
+  margin-right: 1%;
+  float: left;
+  width: 49%;
+}
+
+.img-astronauta {
+  float: right;
+  height: 70vmin;
+  pointer-events: none;
+}
+
+article{
+  margin: 0;
+  float: left;
+  height: 90vh;
+  font-weight: 700;
+  line-height: 65px;
+}
+p{  margin: 0;}
+.f1{
+  margin-top: 10vmin;
+  font-size: 62px;
+  letter-spacing: -0.19px;
+}
+.f2{
+  color: #FA4D09;
+  font-size: 66px;
+  letter-spacing: 0px;
+}
+.f3{
+  font-size: 52px;
+  letter-spacing: 0;
+}
+.f4, .f5{
+  font-weight: 800;
+  font-size: 69px;
+  letter-spacing: 0.21px;
+}
+.f4{color: #FA4D09; float: left;}
+
+.boton1{
+  margin-top: 50px;
+  margin-left: 20%;
+}
+
+.App-section2, .App-section3{
+  background-color: #072348;
+  height: 100vh;
+}
+
+.l1, .l2, .l3, .l4{
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 40px;
+  letter-spacing: -0.75px;
+}
+
+.l2, .l4{ color: #FA4D09;}
+
+.card2{
+  letter-spacing: 0.14px;
+  width: 50vmin ;
+  height: 60vmin;
+  background: #FA4D09 0% 0% no-repeat padding-box;
+  box-shadow: -1px 7px 14px #0000007C;
+  border-radius: 8px;
+}
+
+.card1, .card3{
+  margin-top: 30px;
+  letter-spacing: 0.1px;
+  color: #0A2240;
+  width: 40vmin ;
+  height: 50vmin;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: -1px 7px 14px #87878740;
+  border-radius: 8px;
+}
+
+.img-imagina, .img-explora, .img-conquista{
+  height: 25vmin;
+}
+.l3{margin-top: 30px;}
+
+.img-equipo{
+  height: 50vmin;
+  width: 70vmax;
+}
+
+.sec3{
+  font-weight: 600;
+  width: 135px;
+  font-size: 17px;
+}
+
+.fa-arrow-right{
+  margin-right: 60px;
+  margin-left: 60px;
+  color: #FA4D09;
+}
