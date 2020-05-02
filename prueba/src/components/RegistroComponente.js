@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './components.css';
 import Registro2 from './RegistroVerifica';
 import { useForm } from "react-hook-form";
@@ -8,7 +9,7 @@ export default function RegistroComponente(){
   const {register, handleSubmit, errors} = useForm();
   const onSubmit = data => {
     ReactDOM.render(
-      <Registro3 />,
+      <Registro2 telefono={data.telefono}/>,
       document.getElementById('section-reg')
     );
   };
@@ -28,7 +29,7 @@ export default function RegistroComponente(){
         <p style={{textAlign :"left", marginTop:"5px", fontSize:"2.5vmin"}}>Ingresa tu número a 10 dígitos y te enviaremos un código SMS.</p>
         <form onSubmit={handleSubmit(onSubmit)} className="">
           <label className="d-flex p-2" style={{margin:"5px 0 0 0"}}>Número de Celular</label>
-          <input className="d-flex p-2" type="text" name="telefono" ref={register({minLength: {value:10, message: "El número debe ser de 10 dígitos"}, maxLength: {value:10, message: "El número debe ser de 10 dígitos"}, pattern: {value: /^[55]+[0-9]*$/i, message:"Debe ingresar números empezando con 55"}, required: "Campo obligatorio"  })}/>
+          <input className="d-flex p-2" type="text" name="telefono" ref={register({minLength: {value:10, message: "El número debe ser de 10 dígitos"}, maxLength: {value:10, message: "El número debe ser de 10 dígitos"}, pattern: {value: /^[5]+[5]+[0-9]*$/i, message:"Debe ingresar números empezando con 55"}, required: "Campo obligatorio"  })}/>
            {errors.telefono && <p className="d-flex p-2" style={{fontSize:"2vmin"}}>{errors.telefono.message}</p>}
           <input type="submit" value="Continuar" />
         </form>

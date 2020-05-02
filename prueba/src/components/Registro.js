@@ -35,10 +35,10 @@ export default function Registro(){
 
           <form onSubmit={handleSubmit(onSubmit)} className="">
             <label className="d-flex p-2" style={{margin:"5px 0 0 0"}}>Nombre (s)</label>
-            <input className="d-flex p-2" type="text" name="nombre" ref={register({minLength: {value:3, message: "El nombre debe tener mínimo 3 caracteres"}, pattern: {value: /^[A-Za-zñÑáéíóúÁÉÍÓÚ]*[\s]+[A-Za-zñÑáéíóúÁÉÍÓÚ]*$/i, message:"Formato: A-Za-z"}, required: "Campo obligatorio"  })}/>
+            <input className="d-flex p-2" type="text" name="nombre" ref={register({minLength: {value:3, message: "El nombre debe tener mínimo 3 caracteres"}, pattern: {value: /^[A-Za-zñÑáéíóúÁÉÍÓÚ]*[\s]*[A-Za-zñÑáéíóúÁÉÍÓÚ]*$/i, message:"Ejemplo: José Carlos "}, required: "Campo obligatorio"  })}/>
               {errors.nombre && <p className="d-flex p-2" style={{fontSize:"2vmin"}}>{errors.nombre.message}</p>}
             <label className="d-flex p-2" style={{margin:"5px 0 0 0"}}>Apellidos</label>
-            <input className="d-flex p-2" type="text" name="apellidos" ref={register({ pattern: {minLength: {value:3, message: "El apellido debe tener mínimo 3 caracteres"},value: /^[A-Za-zñÑáéíóúÁÉÍÓÚ]*[\s]+[A-Za-zñÑáéíóúÁÉÍÓÚ]*$/i, message:"Formato: A-Za-z"}, required:"Campo obligatorio" })} />
+            <input className="d-flex p-2" type="text" name="apellidos" ref={register({ pattern: {minLength: {value:3, message: "El apellido debe tener mínimo 3 caracteres"},value: /^[A-Za-zñÑáéíóúÁÉÍÓÚ]*[\s]*[A-Za-zñÑáéíóúÁÉÍÓÚ]*$/i, message:"Ejemplo: Hernández Ramírez"}, required:"Campo obligatorio" })} />
               {errors.apellidos && <p className="d-flex p-2" style={{fontSize:"2vmin"}}>{errors.apellidos.message}</p>}
             <input type="submit"  value="Enviar" />
           </form>

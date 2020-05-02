@@ -120,3 +120,39 @@ p{  margin: 0;}
   margin-left: 60px;
   color: #FA4D09;
 }
+
+
+.cards4{
+  margin-top: 30px;
+  letter-spacing: 0.1px;
+  color: white;
+  width: 40vmin ;
+  height: 50vmin;
+  background: transparent;
+}
+
+.img-seccion4{
+  height: 38vmin;
+}
+
+.table{
+  width: 75%;
+  margin-top: 8vw;
+  background-color: white;
+}
+
+.table th{
+  width: 55%;
+}
+
+.table td{
+  width: 5%;
+}
+
+.App-section4{
+  background-color: #072348;
+}
+
+.fa-check-circle{
+  color: #FA4D09;
+}

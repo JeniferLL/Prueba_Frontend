@@ -32,7 +32,7 @@ footer{
   font-size: 12px;
 }
 
-.Registro{
+.Registro, .Exito{
   background-image: url("../images/component.png") ;
   background-attachment: fixed;
   background-repeat: no-repeat;
