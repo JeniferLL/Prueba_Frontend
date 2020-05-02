@@ -43,11 +43,13 @@ footer{
 }
 
 .section-reg{
+  width: 50vw;
   height: 74.9vh;
 }
 
 .datos{
   margin-left: 10vw;
+  width: 50vw;
 }
 .progress{
   width: 50vw;
@@ -78,14 +80,28 @@ footer{
 form{
   margin-top: 40px;
 }
+input[type=text]{
+  height: 30px;
+  width: 60%;
+}
+
+input[type=submit]{
+  float: right;
+  width: 200px;
+  height: 40px;
+  border-color: transparent;
+  border-radius: 100px;
+  background-color: #FA4D09;
+  color: white;
+}
 
 .reg-figure{
-  margin-right: 0;
-  width: auto;
+  width: 40vw;
 }
 
 .reg-astronauta {
   float: left;
-  height: 75vh;
+  max-height: 75vh;
+  max-width: 40vw;
   pointer-events: none;
 }

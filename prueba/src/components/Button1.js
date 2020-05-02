@@ -7,7 +7,7 @@ class Button1 extends Component{
     return(
       <div className="b1 d-flex align-items-center ">
         <Link className="enlace1" to="/registro" >
-         <p>!Quiero ser parte! </p>
+         <p>!Quiero ser parte!</p>
         </Link>
       </div>
     );
