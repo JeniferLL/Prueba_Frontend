@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Exito from './Exito';
 import './components.css';
 import ModalExample from  './Modal';
-import Exito from './Exito';
-import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import regAstronauta from './images/component-reg4.png';
 
@@ -11,7 +10,7 @@ export default function RegistroComponente(props){
   const {register, handleSubmit, errors} = useForm();
   const onSubmit = data => {
     ReactDOM.render(
-      <Exito />,
+      <Exito/>,
       document.getElementById('root')
     );
   };

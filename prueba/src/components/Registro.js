@@ -6,7 +6,6 @@ import Registro2 from './RegistroComponente';
 import Header from './Header';
 import Footer from './Footer';
 import regAstronauta from './images/components-reg1.png';
-import { Link } from 'react-router-dom';
 
 export default function Registro(){
   const {register, handleSubmit, errors} = useForm();

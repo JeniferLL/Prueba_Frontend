@@ -29,7 +29,7 @@ export default function RegistroComponente(props){
         <p style={{textAlign :"left", fontSize:"3vmin"}}>{props.telefono}</p>
         <p style={{textAlign :"left", marginTop:"10px", fontSize:"2.5vmin"}}>Ingresa el código de verificación:</p>
         <form onSubmit={handleSubmit(onSubmit)} className="">
-          <label className="d-flex p-2" style={{margin:"5px 0 0 0",fontSize:"2.5vmin" }}>Código de verificación</label>
+          <label className="d-flex p-2" style={{margin:"5px 0 0 0",fontSize:"2.5vmin" }}>Código de verificación (6 números)</label>
           <input className="d-flex p-2" type="text" name="telefono" ref={register({minLength: {value:6, message: "El código es de 6 dígitos"}, maxLength: {value:6, message: "El código es de 6 dígitos"}, pattern: {value: /^[0-9]*$/i, message:"Debe ingresar números"}, required: "Campo obligatorio"  })}/>
            {errors.telefono && <p className="d-flex p-2" style={{fontSize:"2vmin"}}>{errors.telefono.message}</p>}
           <input type="submit" value="Validar código" />

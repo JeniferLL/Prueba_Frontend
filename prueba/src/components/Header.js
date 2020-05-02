@@ -7,7 +7,7 @@ class Header extends Component{
     return(
       <header className="d-flex align-items-end">
       <i  className="fas fa-rocket"></i>
-      <Link to="/" style={{color:"white"}}><h1>atomicLabs</h1> </Link>
+      <h1>atomicLabs</h1> 
       </header>
     );
   }
