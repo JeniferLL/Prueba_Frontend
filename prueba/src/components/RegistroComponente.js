@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './components.css';
+import Registro1 from './Registro';
 import Registro2 from './RegistroVerifica';
 import { useForm } from "react-hook-form";
 import regAstronauta from './images/component-reg2.png';
@@ -14,11 +15,21 @@ export default function RegistroComponente(){
     );
   };
 
+  function regresa(){
+    ReactDOM.render(
+      <Registro1 />,
+      document.getElementById('root')
+    );
+  }
+
   return(
     <div className="section-reg d-flex justify-content-start" >
       <section className="datos ">
         <div className="progress" id="progress">
           <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style={{width: "40%"}}></div>
+       </div>
+       <div className=" d-flex justify-content-start">
+        <p style={{textAlign :"left", fontSize:"1.9vmin", marginTop:"10px"}} onClick={regresa}><u>Regresar</u> </p>
        </div>
         <div className="titulo d-flex justify-content-start">
           <div className="circle">2</div>

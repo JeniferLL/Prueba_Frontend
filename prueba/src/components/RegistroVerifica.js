@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './components.css';
+import Registro1 from './RegistroComponente';
 import Registro2 from './RegistroTerminos';
 import { useForm } from "react-hook-form";
 import regAstronauta from './images/component-reg2.png';
@@ -14,11 +15,21 @@ export default function RegistroComponente(props){
     );
   };
 
+  function regresa(){
+    ReactDOM.render(
+      <Registro1 />,
+      document.getElementById('section-reg')
+    );
+  }
+
   return(
     <div className="section-reg d-flex justify-content-start" >
       <section className="datos ">
         <div className="progress" id="progress">
           <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{width: "60%"}}></div>
+       </div>
+       <div className=" d-flex justify-content-start">
+        <p style={{textAlign :"left", fontSize:"1.9vmin", marginTop:"10px"}} onClick={regresa}><u>Regresar</u> </p>
        </div>
         <div className="titulo d-flex justify-content-start">
           <div className="circle">3</div>
@@ -27,6 +38,7 @@ export default function RegistroComponente(props){
         </div>
         <p style={{textAlign :"left", marginTop:"30px", fontSize:"3vmin"}}>Te enviamos un SMS al número:</p>
         <p style={{textAlign :"left", fontSize:"3vmin"}}>{props.telefono}</p>
+        <p style={{textAlign :"left", fontSize:"2vmin", color:"red"}} onClick={regresa}><u>editar número </u> </p>
         <p style={{textAlign :"left", marginTop:"10px", fontSize:"2.5vmin"}}>Ingresa el código de verificación:</p>
         <form onSubmit={handleSubmit(onSubmit)} className="">
           <label className="d-flex p-2" style={{margin:"5px 0 0 0",fontSize:"2.5vmin" }}>Código de verificación (6 números)</label>

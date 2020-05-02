@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import Registro2 from './RegistroComponente';
 import Header from './Header';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 import regAstronauta from './images/components-reg1.png';
 
 export default function Registro(){
@@ -25,7 +26,10 @@ export default function Registro(){
           <div className="progress" >
             <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style={{width: "20%"}}></div>
          </div>
-          <div className="titulo d-flex justify-content-start">
+         <div className=" d-flex justify-content-start">
+          <p style={{textAlign :"left", fontSize:"1.9vmin", marginTop:"10px", color:"white"}} ><u>Regresar</u> </p>
+         </div>
+         <div className="titulo d-flex justify-content-start">
             <div className="circle">1</div>
             <label className="l1 font-s">TE QUEREMOS</label>
             <label className="l4 font-s">&nbsp;CONOCER</label>
@@ -37,7 +41,7 @@ export default function Registro(){
             <input className="d-flex p-2" type="text" name="nombre" ref={register({minLength: {value:3, message: "El nombre debe tener mínimo 3 caracteres"}, pattern: {value: /^[A-Za-zñÑáéíóúÁÉÍÓÚ]*[\s]*[A-Za-zñÑáéíóúÁÉÍÓÚ]*$/i, message:"Ejemplo: José Carlos "}, required: "Campo obligatorio"  })}/>
               {errors.nombre && <p className="d-flex p-2" style={{fontSize:"2vmin"}}>{errors.nombre.message}</p>}
             <label className="d-flex p-2" style={{margin:"5px 0 0 0"}}>Apellidos</label>
-            <input className="d-flex p-2" type="text" name="apellidos" ref={register({ pattern: {minLength: {value:3, message: "El apellido debe tener mínimo 3 caracteres"},value: /^[A-Za-zñÑáéíóúÁÉÍÓÚ]*[\s]*[A-Za-zñÑáéíóúÁÉÍÓÚ]*$/i, message:"Ejemplo: Hernández Ramírez"}, required:"Campo obligatorio" })} />
+            <input className="d-flex p-2" type="text" name="apellidos" ref={register({minLength: {value:3, message: "El apellido debe tener mínimo 3 caracteres"}, pattern: {value: /^[A-Za-zñÑáéíóúÁÉÍÓÚ]*[\s]*[A-Za-zñÑáéíóúÁÉÍÓÚ]*$/i, message:"Ejemplo: Hernández Ramírez"}, required:"Campo obligatorio" })} />
               {errors.apellidos && <p className="d-flex p-2" style={{fontSize:"2vmin"}}>{errors.apellidos.message}</p>}
             <input type="submit"  value="Enviar" />
           </form>

@@ -16,7 +16,7 @@ export default function Exito(){
             <label style={{textAlign :"left"}} className="l4 d-flex p-2 font-s">HAN SIDO ENVIADOS CON ÉXITO</label>
           </div>
           <p style={{textAlign :"left", marginTop:"30px", fontSize:"3vmin"}}>En breve recibirás más información por parte de AtomicLabs</p>
-          <p style={{textAlign :"left", marginTop:"30px", fontSize:"2.5vmin"}}>!Esperamos verte pronto!</p>
+          <p style={{textAlign :"left", marginTop:"30px", fontSize:"2.5vmin"}}>¡Esperamos verte pronto!</p>
         </section>
 
         <figure className="reg-figure">
