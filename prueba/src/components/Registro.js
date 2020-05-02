@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './components.css';
 import { useForm } from "react-hook-form";
+import Registro1 from '../App';
 import Registro2 from './RegistroComponente';
 import Header from './Header';
 import Footer from './Footer';
@@ -18,6 +19,13 @@ export default function Registro(){
 
   };
 
+  function regresa(){
+    ReactDOM.render(
+      <Registro1 />,
+      document.getElementById('root')
+    );
+  }
+
   return(
     <div className="Registro">
       <Header/>
@@ -27,7 +35,7 @@ export default function Registro(){
             <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style={{width: "20%"}}></div>
          </div>
          <div className=" d-flex justify-content-start">
-          <p style={{textAlign :"left", fontSize:"1.9vmin", marginTop:"10px", color:"white"}} ><u>Regresar</u> </p>
+          <p style={{textAlign :"left", fontSize:"1.9vmin", marginTop:"10px", color:"white"}} onClick={regresa}><u>Regresar</u> </p>
          </div>
          <div className="titulo d-flex justify-content-start">
             <div className="circle">1</div>
